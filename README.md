@@ -11,12 +11,19 @@ The custom build fixes an issue related to big numbers evaluation in the WebAsse
 ## Usage
 To use this custom OPA build, follow the instructions below to replace the OPA binary on your local machine.
 
-### macOS
 
 1. **Download the custom OPA binary:**
+
+  - Mac with apple silicon: 
     ```bash
-    curl -L -o opa.new https://raw.githubusercontent.com/Ptroger/opa-bugfix-build/main/opa
+    curl -L -o opa.new https://raw.githubusercontent.com/Ptroger/opa-bugfix-build/main/opa_darwin_arm64
     ```
+  - Linux with amd64 arch:
+    ```bash
+    curl -L -o opa.new https://raw.githubusercontent.com/Ptroger/opa-bugfix-build/main/opa_linux_amd64_static
+    ```
+  
+  If you need another architecture, you can download the repository at https://github.com/Ptroger/opa-bugfix and build the version you need.
 
 2. **Make the new binary executable:**
     ```bash
